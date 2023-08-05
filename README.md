@@ -20,7 +20,7 @@ _Restart terminal window_
 
 # Options
 
-Generally written first in the command if an input is needed
+Generally written first in the command
 
 - prefixed with `-`
 - `date -u` : universal time
@@ -56,3 +56,40 @@ Requires an input to compute
 
 - `ncal -A 5` : 5 months after current month
 - `ncal -B 3` : 3 months before current month
+
+# MAN Pages - Commands Manual
+
+- `man <command>` : _man ncal_ : Show documentation on command passed to `man`
+- `q` : to exit
+- `space` : move one page at a time
+- `b` : back one page
+- `/<command>` `enter`: _/-w_ : find command
+
+## Synopsis
+
+- `[ ]` : is opitional
+- `...` : can pass multiple too
+- `source_file` : plain text with underline means required
+
+## Type
+
+- `type` : shows the type of command
+
+4 types of commands
+
+- an exectuable program, usually stored in /bin, /usr/bin, /usr/local/bin. Compiled binary files.
+- a build in shell command (bash, zsh, etc)
+- a shell function
+- an alias
+
+## Which
+
+Shows where the command is located on device
+
+- `which clear` : outputs _/usr/bin/clear_ physical location
+
+# Help
+
+- `help <command>`
+
+Commands built into shell are not in `man` pages normally. Use _help_
