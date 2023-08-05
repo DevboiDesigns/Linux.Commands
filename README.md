@@ -9,9 +9,23 @@
 - `chsh -s /bin/bash` - change shell to bash
 - `chsh -s /bin/zsh` - change shell to zsh
 
-_Restart terminal window_
+_Restart terminal window to apply changes_
+
+## Shortcuts
+
+- clear : `cntrl + l`
+- move to end of line : `cntrl + e`
+- move to beginning of line : `cntrl + a`
+- move one char forward : `cntrl + f`
+- move one char backward : `cntrl + b`
+- move one word forward: `option + right arrow`
+- move one word backward: `option + left arrow`
+- remove all text to end of line from cursor : `cntrl + k`
+- remove all text to beginning of line from cursor : `cntrl + u`
 
 # Commands
+
+_Tab autocompletes names_
 
 - `date` - current date
 - `ncal` - calendar of month - vertical
@@ -93,3 +107,94 @@ Shows where the command is located on device
 - `help <command>`
 
 Commands built into shell are not in `man` pages normally. Use _help_
+
+# Root
+
+- `/` : root directory
+- `~` : home directory
+
+# Naviagtion
+
+- `cd`
+- `pwd` : print working directory (path)
+- `ls` : list
+
+## ls Options
+
+- `-a` : show all _hidden_ folders
+- `-l` : long format of list of files
+- `-h` : human readable size format
+- `-S` : sort by file size largest first
+
+- `ls <path>` : _ls /_ to look inside any directory from any working dir
+  - `ls <directory>` : outputs all contents in directory
+
+## cd
+
+- `cd` : change directory
+- `cd ~` : go to home directory
+
+Passing an absolute path from any working directory will take you there
+
+# Creating files and directories
+
+- `touch` : create file (can prove multiple file names)
+- `mkdir` : create directory
+
+Can provdie absolute path `../fileORdirName`
+
+Can provide touch a file name to update last updated time of file (also lol)
+
+- `file <filename>` : tells you the file type
+
+**Use " " qoutes to create a file name with spaces**
+_But ideal to not use spaces in file or directory names_
+
+**mkdir**
+
+`-p`
+
+- option `-p` will make parent directory also : example `mkdir -p Horses/Mare` or `mkdir Horses/Mare -p`
+
+# Nano
+
+`pico <filename>` : built in text editor
+
+all commands at bottom start with control key
+
+# Deleting, Copying, and Moving
+
+## Deleting
+
+- `rm` : deletes. Not in trash actully completely gone.
+
+**Folders**
+
+- `rm -d` or `rmdir` : deletes directories that are empty
+- `rm -r` : delete recursively. Deletes all files and directories with a direcory.
+
+List out interactivly as it deletes to approve each removal
+
+- `-i`
+
+## Moving
+
+- `mv <source> <destination>`
+
+Can provide multiple files with a destination of a directory.
+
+- `mv <filename> ..` : can move back to previous dir
+
+### Renaming
+
+- `mv <fileORDirName> <fileORDirNameThatDoesNotexist>`
+
+_You can also provide new file name for destination path and rename and move at the same time_
+
+## Copying
+
+- `cp` : copying, syntax is similar to moving
+
+To copy nested directories have to provide option flag
+
+- `cp -r` : recurrsive copying
