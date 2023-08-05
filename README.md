@@ -32,6 +32,18 @@ _Tab autocompletes names_
 - `cal` - calendar - horizontal
 - `ncal <month> <year>` - specific cal
 
+## History of Commands
+
+- `history` : will output all commands run
+- `history | less` : pages to scroll through with man pages toggle /scroll keys
+- `!<comman#fromhistory` : _!84_ will rerun the command that is given
+- `cntrl + r` : search history type command : down arrow to escape
+- `history -c` : clears history record
+
+**Saves a file of history under home directory**
+
+- `.bash_history` : can open with `nano` to view all scripts run
+
 # Options
 
 Generally written first in the command
