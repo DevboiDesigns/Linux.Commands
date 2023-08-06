@@ -256,47 +256,14 @@ _example_ : `echo "This is my Test" > test.txt`
 
 ## Standard Input
 
-1. `0>` : dont need to specify 0
-
 Send any value to command via file etc
 
 - `<` : redirect standard input from a specific file.
 
-### Combining Input and Output
-
-2. `1>` : dont need to specify 1
+## Combining Input and Output
 
 Must provide in order of Input to Output
 
 - `cmd < (inputFile) > (outputFile)`
-- `cmd < (inputFile) >> (outputFile)` : append
 
 ## Standard Errors
-
-3. `2>` : dont need to specify 2
-
-Redirect output of errors to a file or any location
-
-- `2>` : redirect error output to any where
-- `2>>` : redirect error output to any where and _Append_
-
-_example_ `sort read3.txt 2> error`
-
-## Combining with error
-
-Newer syntax
-
-- `ls &> output` send output and errors to same file
-- `ls &>> output` : append
-
-Output command should be provided before error output command
-
-- `cat file.txt > newFile.txt 2>> error.log`
-
-**Redirect Ouput and Error to same location**
-
-_Shorthand_
-
-- `ouput.txt 2>&1`
-
-_example_ `cat dogs.txt > output.txt 2>&1`
