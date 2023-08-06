@@ -210,3 +210,25 @@ _You can also provide new file name for destination path and rename and move at 
 To copy nested directories have to provide option flag
 
 - `cp -r` : recurrsive copying
+
+# Working with files
+
+- `cat <file>` : concatenate contents of files, print out. Can provide many files.
+- `less <file>` : print out contents with iteractive view program, for large files with lots of content
+- `tac <file>` : cat in reverse. prints out in reverse
+- `rev <file>`: print out contents but reversing the order of the words
+- `head <file>` : print first 10 lines of file (default is 10)
+  - `head -n 5 <file>` : prints first 5 lines
+  - `-<Int>` : dont need `-n` can just provide `int` and `-`
+- `tail <file>` : last 10 lines of file
+  - `-n`
+  - `-f` : follow, cursor will wait to print out next line (good for logs)
+- `wc`: can tell us how many lines are in a file (shows output in below order)
+  1. lines `-l` : can specify only one output parameter
+  2. words `-w`
+  3. bytes
+  4. `-m` : number of characters
+- `sort` : prints out the contents of file, but shows each line in Alphabetical order
+  - `-r` : reverse order of sort
+  - `-n` : will sory by numerical order
+  - `-u` : ignore duplicates ony show unique values
