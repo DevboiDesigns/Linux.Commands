@@ -302,3 +302,42 @@ _Shorthand_
 _example_ `cat dogs.txt > output.txt 2>&1`
 
 # Piping
+
+Connect two commands
+Redirect output from one command to another
+Redirect a stream from one program to another program
+Can pass endless amounts of pipes
+
+_example: `date | rev`_
+
+## Piping and Redirecting
+
+- `>` : connects a command to a file
+- `|` : connects a command to another command
+
+# tr
+
+Translate and manipulate characters
+
+- `<a>` : char to change
+- `<b>` : what to change char to
+
+Requires a standard input `cat file.txt | tr <a> <b>`
+
+**Delete a single char**
+
+- `<a>` : char to delete
+
+- `cat file.txt | tr -d <a>`
+- `cat file.txt | tr -d a-z` : will delete all lowercase letters
+- `cat file.txt | tr -d [:alpha:]` : will delete all letters
+  - `[:digit:]` : Numbers etc **Character classes**
+  - `[:blank:]` : Blank spaces and Tabs
+
+# tee
+
+- `tee <filename>` : capture output from one command and pass to a second command input
+
+_example: ` cat test.txt | tee new-test.txt | wc -l`_
+
+# Expansion
