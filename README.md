@@ -132,7 +132,7 @@ Commands built into shell are not in `man` pages normally. Use _help_
 - `pwd` : print working directory (path)
 - `ls` : list
 
-## ls Options
+## Options
 
 - `-a` : show all _hidden_ folders
 - `-l` : long format of list of files
