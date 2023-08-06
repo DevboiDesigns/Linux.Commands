@@ -64,7 +64,7 @@ ncal -3
 _same meaning different syntax_
 
 - `ncal -3 -h -j`
-- `ncal -3h`
+- `ncal -3hj`
 
 ## Long form option
 
