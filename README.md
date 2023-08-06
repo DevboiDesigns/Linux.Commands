@@ -495,3 +495,52 @@ echco Today is $(date)
 OUTPUT
 Today is Sun Aug 6 15:12:55 +07 2023
 ```
+
+# Finding Things
+
+## locate
+
+Find any matching pathname or filename on device
+
+- `locate <anyfilename>`
+
+`-i` : ignore case _aA_
+`-l<amount>` : limit ouptut to amount
+`-e` : ignores files that are not recently deleted, only show _existing_ files
+
+## find
+
+Will find and list every file and dir nested in our _working_ dir
+More powerful than _locate_
+
+- `find .` : list all nested folders in working dir
+
+**Filter by type**
+
+- `find Geese/ -type d` : only show directories
+- `find Geese/ -type f` : only show files
+
+**name option**
+
+- `find ~/GitHub/Terminal/ -name "*.txt"`
+
+Will find all files with name that is provided in quotes, can use pattern matching
+
+```
+/Users/devboi/GitHub/Terminal//file2.txt
+/Users/devboi/GitHub/Terminal//file3.txt
+/Users/devboi/GitHub/Terminal//file1.txt
+/Users/devboi/GitHub/Terminal//git-test.txt
+/Users/devboi/GitHub/Terminal//new-test.txt
+/Users/devboi/GitHub/Terminal//output-test.txt
+```
+
+- `find ~ -name "*chick*"` : pattern matching `*chick*` searches for path names with characters before and/ or after `chick`
+
+_Case Sensitive_
+
+- `-name`
+
+Case Insensitvie
+
+- `-iname`
