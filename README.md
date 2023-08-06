@@ -300,3 +300,5 @@ _Shorthand_
 - `ouput.txt 2>&1`
 
 _example_ `cat dogs.txt > output.txt 2>&1`
+
+# Piping
