@@ -3,6 +3,9 @@
 - [OS History](https://eylenburg.github.io/os_familytree.htm)
 - [1st Edition Unix Manual](https://www.bell-labs.com/usr/dmr/www/1stEdman.html) - November 3, 1971
 
+_copy all scripts from tutorials_
+_`cp ~/.bash_history BASH_HISTORY_FROM_TUTORIALS`_
+
 ## Shell
 
 - `echo $SHELL` - to see current shell
@@ -341,3 +344,154 @@ Requires a standard input `cat file.txt | tr <a> <b>`
 _example: ` cat test.txt | tee new-test.txt | wc -l`_
 
 # Expansion
+
+Pathname or pattern expansions, Globs, Wildcards
+
+## Any and all of
+
+- `*` : zero or more characters in filename
+
+  - `ls *.html` will ls all html files
+  - `ls blue*` : any files that start with blue
+
+## One single character
+
+- `?` : any Single (one) file matching
+- `??` : any Two Char (two) file matching
+
+_example_
+
+- `ls app.??` : will find app.j,s app.ts, but not app.html _(2 characters)_
+- `ls pic?.png` : will find pic1.png, pic2.png, but not pic.png _(1 character)_
+
+_Combining_
+
+- `echo *.??` : read out any file that ends with 2 characters for file type
+
+## Range
+
+- `[]`
+
+_examples_
+
+```
+ls pic[123].png
+```
+
+will output pic1.png, pic2.png, but not pic.png or pic4.png 2.
+
+```
+ls file[1-9]
+```
+
+will output file1, file2, all the way to file9 but not file10 3.
+
+```
+ls [A-F]*
+```
+
+will output any file starting with capital A through F
+
+_Negate a Range_
+
+- `^` : carrot
+
+- `echo [^D]*` : will ignore all files starting with `D`
+
+**Tilde**
+
+- `~` : points to Home directory/ or username directory on newer mac
+
+## Brace Expansion
+
+- `{.., ..., ...}` : generate arbitrary strings, will generate multiple strings for us based on a pattern.
+
+_example_ `touch app{1,2,3}.txt` : creates 3 files app1.txt, app2.txt, app3.txt
+
+_example_
+
+```
+// INPUT
+echo {Mon,Tues,Wed}_{AM,PM}.txt
+
+//OUTPUT
+Mon_AM.txt Mon_PM.txt Tues_AM.txt Tues_PM.txt Wed_AM.txt Wed_PM.txt
+
+
+// INPUT
+echo {a..z}
+
+//OUTPUT
+a b c d e f g h i j k l m n o p q r s t u v w x y z
+```
+
+- `mkdir {1..31}Month`
+- `rm -r {1..31}Month`
+
+**Nested Braces**
+
+```
+// INPUT
+echo {x,y{1..4},z}
+
+// OUTPUT
+x y1 y2 y3 y4 z
+```
+
+## Arithmatic Expansion
+
+- `$((expression))` : any mathamatical expression
+
+_example_
+
+```
+echo $((30-30)) // outputs 0
+```
+
+# Quotes
+
+## Double Quotes
+
+- `" "`
+
+Shell will respect spacing and special characers exept for `$`, `\`, `<backtick>`
+
+```
+// INPUT
+echo "Today is................ $(date)"
+
+// OUTPUT
+Today is................ Sun Aug  6 15:08:54 +07 2023
+
+```
+
+## Single Quotes
+
+- `' '`
+
+Supress all forms of substition, will just give you back the string as you typed it
+
+```
+// INPUT
+echo 'Today is................ $(date)'
+
+// OUTPUT
+Today is................ $(date)
+
+```
+
+## Command Substitution
+
+Substitute a command in a string of text
+
+- `$()` access an env variable
+- echo ` ` : backticks are substitute syntax
+
+```
+INPUT
+echo Today is `date`
+echco Today is $(date)
+
+OUTPUT
+Today is Sun Aug 6 15:12:55 +07 2023
+```

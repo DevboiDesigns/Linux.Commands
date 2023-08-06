@@ -1,0 +1,273 @@
+echo $SHELL
+cler
+clear
+ls
+cd Documents/
+cd ..
+cd ..
+ls
+cd Shared/
+cd ..
+cd devboi/
+clear
+date
+date
+date
+ncal
+cal
+ncal -j
+ncal -m
+ncal -M
+ncal -3
+date -u
+clear
+ncal -A 5
+ncal -A 3
+ncal july 1969
+ncal july 1969 -B1
+ncal july 1969 -B 1
+clear
+man ncal
+man ncal
+man man
+man ncal
+man ncal
+ncal -w
+man echo
+man cp
+man man
+man man
+man 6
+man -k dog
+man 5 passwd
+echo uid
+ehco $USER.UID
+type clear
+find usr
+cd ..
+ls
+ls -a
+cd ..
+ls -a
+cd ..
+ls -a
+cd usr
+ls -a
+cd bin/
+ls -a
+cd ..
+ls
+ls'
+ls -a
+who -m
+who -bTu
+who -ms
+who am i
+who -u
+type echo
+type date
+help echo
+echo -e \a Test
+echo -e alert Test
+echo -e alert
+echo
+echo -e 
+echo -e \a
+who -b
+open /
+clear
+cd ..
+ls
+cd ..
+ls
+cd Users/
+ls -a
+pwd
+ls
+cd devboi/
+cd StockLift/
+pwd
+cd StockLift-server/
+pwd
+open /
+cd ..
+cd.
+cd ..
+ls
+ls -l
+man ls
+cd StockLift/
+cd StockLift-server/
+ls
+ls fb.auth.js 
+ls fb.auth
+ls app.log 
+ls node_modules/
+ls /
+ls
+cd ..
+cd ..
+pwd StockLift/
+ls
+pwd StockLift/StockLift-server/
+ls /Users/devboi/StockLift/StockLift-server/
+ls -l
+ls -al
+clear
+ls -lah
+clear
+ls -lahS
+cd Able
+cd Ableton/
+ls
+ls -hSl
+ls
+cd Desktop
+cd /User/devboi/Desktop
+cd ..
+ls
+cd Documents/
+cd ~
+cd /
+ls
+ls -al
+cd ~
+ls
+cd Do
+cd Do
+cd Downloads/
+clear
+ls
+cd Farm/
+ls -la
+cd Coop/
+ls -la
+cd Chickens/
+ls -la
+ls -laS
+ls -laSh
+pwd
+cd /Users/devboi/Downloads/Farm/Coop/
+ls
+cd Geese/
+ls -lahS
+cd ..
+ls
+ls -
+ls -a
+cd Chickens/
+ls -a
+cd Buckbeak 
+oepn .
+open .
+cd ..
+ls
+cd ..
+ls
+cd Stable/
+ls -alSh
+cd Horses/
+ls -alhS
+man ls
+la
+la
+ls
+ls -m
+clear
+man touch
+ls
+cd ~
+ls
+cd GitHub/
+cd St
+cd /Users/devboi/StockLift/StockLift-server/
+ls
+file fb.auth.js 
+file docker-compose.yml 
+file Dockerfile 
+cd ..
+ls
+cd Stocklift-iOS/
+ls
+file Pod
+file Podfile
+file Podfile.lock 
+file Stocklift.xcworkspace/
+file Stocklift.xcodeproj/
+clear
+ls
+cd ~
+ls
+cd GitHub/
+ls
+cd Terminal/
+mkdir my-app
+cd my-app/
+touch README.md
+package.json
+touch package.json
+mkdir public
+cd public/
+touch index.html
+cd ..
+mkdir src
+cd src/
+touch App.js App.css index.css index,js
+ls
+rm index,js 
+ls
+touch index.js
+ls
+cd ..
+rm -r public/
+mkdir public
+touch public/index.html
+ls
+ls -R
+ls
+mkdir src/components/components/Navbar
+mkdir src/components/components/Navbar -p
+ls
+mkdir -p src/components/components/Navbar
+man nano
+man nano
+ls
+cd ~
+ls
+cd Downloads/
+ls
+cd Farm/
+ls
+touch test.txt
+nano test
+pico test
+ls
+open test
+man rm
+la
+ls
+rm test
+ls
+rm test.j
+rm test.js 
+ls
+rm test.txt 
+ls
+rm -r Stable/
+ls
+cd ..
+ls
+cd Farm/
+ls
+cd Coop/
+ls
+ls
+touch test
+ls
+mv test Chickens/
+ls
+ls Chickens/
+ls
+mv Chickens/ Chickens-Test
+ls
+man cp
